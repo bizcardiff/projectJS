@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	 <div class="cont-2 text-center">
+     	<input type="button"  onclick="random()" value="WELCOME" class="btn btn-info">
+     </div>
+<div class="container shadow p-100 m-100" id="quote">
+
+</div>
+ <div class="cont-3" id="author" style="height: 60px; width: 100px;"></div>
+      
+	
+
+<script type="text/javascript">
+	 var quotes=[
+	   {
+	   	quote:"The mind is a powerful place..Don't cage your self and your limitations in your mind..",
+	   	author:"Vic"
+	   },
+	   {
+	   	quote:"The key to one's success is believing in one's self and abilities",
+	   	author:"Ngeh",
+	   },
+	    {
+	   	quote:"A fish can climb trees if you make it believe it can...",
+	   	author:"Boris",
+	   },
+	    {
+	   	quote:"Success and self-confidence starts from within...When the enemy within fails, the enemy without takes over...",
+	   	author:"Nnene",
+	   },
+	    {
+	   	quote:"For God so loved the world that he gave his only begotten son that whosoever believe in him shall not perish but shall have eternal life...",
+	   	author:"John",
+	   },
+	    {
+	   	quote:"The Devil only comes to kill,to steal and to destroy..But I have come that you may have life and have it to the fullest.....",
+	   	author:"John",
+	   },
+	   {
+	   	quote:"The journey to success entails consistency and hardwork",
+	   	author:"Yvie"
+	   }
+	]
+
+	function random(){
+		var random=Math.floor((Math.random()*6)+1)
+	 document.querySelector("#quote").innerHTML=quotes[random].quote
+	 document.querySelector("#author").innerHTML=quotes[random].author
+		//alert(random)
+		//alert(Welcome to my page)
+	}
+	
+</script>
+</body>
+</html>

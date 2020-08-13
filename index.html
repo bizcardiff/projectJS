@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<style type="text/css">
+		body{
+			background-color: #333;
+		}
+		.container-2{
+			padding:200px;
+			/*margin: 60px 50px;*/
+			background: #afeeee;
+			/*box-sizing: border-box;*/
+			border-radius: 20px;
+			padding-top: 10px;
+			font-size: medium;
+			margin-left: 35%;
+			margin-bottom: 10%;
+			
+		}
+		.container-1{
+			margin-left: 40%;
+			margin-top: 5%;
+			margin-top: 50px;
+			padding-top: 20px;
+			border-radius: 10px;
+
+		}
+		#NG{
+			text-align: left;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="container-1">
+		
+		   <input type="text" placeholder="input"  id="NG">
+		   <button class="btn btn-primary" onclick="add()">submit</button>
+		   <!--<input class="btn btn-warning" onclick="add()" value="submit">-->	
+	</div>
+	<div class="container-2" style="border: 1px solid black; height: 200px; width: 200px;" id="list"></div>
+
+
+
+
+<script type="text/javascript">
+/*	//var decleration and conditional statements
+	var x=7
+	if(x<=5){
+	 alert("small")
+	}
+	else{
+	 	alert("big")
+	 }
+	 //FUNCTIONS
+	 function great(){
+	 	alert("Hello World")
+	 }
+	 great()
+	 // Adding a parameter in a function
+	 var x="john"
+	 function great(name){
+	 	document.write("Hello"+name)
+	 }
+	 great(x)
+
+	 //function to pass the sum of two numbers
+	 var x=5
+	 var y=3
+	 function sum(v,b){
+	 	alert(v+b)
+	 }
+	 sum(x,y)
+
+	 //array of streets and its length..using for loop and incrementing and filling empty array list with list of streets[str1,str2,str3] 
+	 var streets=["str1","str2","str3"]
+	 	alert(streets)
+	 	alert(streets.length)
+	 var streetout=[]
+	 var i=0
+	 for(i=0;i<streets.length;i++){
+	 	streetout.push(streets[i])
+	 }
+
+	 //While loop
+	 var i=0
+	 while(i<=5){
+	 	document.write("Hello World <br>")
+	 	i++
+	 }*/
+	 //Events in Javascript...Document object manipulation
+    
+      //selcting elements and displaying them in apoint form using querySelector  and displays with document.querySelector.innerHTML  
+        var content=[]
+
+        function add(){
+        	var msg=document.querySelector("#NG").value + "<br>"
+        	content.push(msg)
+        	document.querySelector("#list").innerHTML = content
+       }
+
+	
+	 
+
+
+
+</script>
+</body>
+</html>
